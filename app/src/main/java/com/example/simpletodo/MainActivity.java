@@ -79,13 +79,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String todoItem = etItem.getText().toString();
+                Log.d("MainActivity", "Item length: " + todoItem.length());
                 // Add item to the model
-                items.add(todoItem);
-                // Notify adapter that an item is inserted
-                itemsAdapter.notifyItemInserted(items.size() - 1);
-                etItem.setText("");
-                Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
-                saveItems();
+                if (!todoItem.trim().isEmpty()) {
+                    items.add(todoItem);
+                    // Notify adapter that an item is inserted
+                    itemsAdapter.notifyItemInserted(items.size() - 1);
+                    etItem.setText("");
+                    Toast.makeText(getApplicationContext(), "Item was added", Toast.LENGTH_SHORT).show();
+                    saveItems();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Item empty", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

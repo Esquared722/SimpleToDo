@@ -29,7 +29,8 @@
         android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/btnAdd"
         android:ems="10"
-        android:hint="Add an item here!" />
+        android:hint="Add an item here!"
+        android:inputType="text" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvItems"
@@ -41,6 +42,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="0dp" />
+        android:layout_marginBottom="0dp"
+        android:scrollbars="vertical"/>
 
 </RelativeLayout>
