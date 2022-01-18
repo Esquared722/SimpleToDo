@@ -22,13 +22,12 @@ The following **additional** features are implemented:
 
 * [ ] Added check for empty input, with toast to alert user
 * [ ] Changed input-type of item input to "Text"
-* [ ] Added vertical scrollbar to list
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/iuSYjiG' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
